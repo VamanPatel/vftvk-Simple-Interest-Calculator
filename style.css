@@ -1,4 +1,64 @@
-body {background-color:tan;}
-h1{color:green;}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
 
+.main-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+.main-hero {
+    border: 1px solid black;
+    width: 40%;
+    height: 450px;
+    margin: 135px auto;
+    background-color: white;
+    border-radius: 22px;
+}
+.main-hero .headertext {
+    text-align: center;
+    font-size: 2.5rem;
+    color: grey;
+    margin-top: 35px;
+    margin-bottom: 35px;
+}
+.main-hero .form-group {
+    text-align: center;
+}
 
+.main-hero button {
+    margin-left: 131px;
+    padding: 3px 8px;
+    border-radius: 3px;
+    margin-top: 25px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: inline-block;
+    width: 150px;
+    text-align: left;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+#rangeInput {
+    margin-left: 15px;
+}
+
+#Displayresult {
+    margin-left: 135px;
+    margin-top: 25px;
+}

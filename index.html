@@ -1,16 +1,63 @@
 <html>
     <head>
-    <script src="script.js"></script>
-    <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="style.css" />
     </head>
     <body>
-        <h1>Simple Interest Calculator</h1>
+        <section class="main-wrapper">
+            <div class="main-hero">
+                <h1 class="headertext">Simple Interest Calculator</h1>
 
-        Amount <input type="number"  id="principal">  <br/>
-        Rate <input type="number"  id="rate">  <br/>
-        No. of Years <input type="number"  id="years">  <br/>
-        Interest : <span id="result"></span><br>
+                <div class="form-group">
+                    <label for="Amount">Amount</label>
+                    <input type="number" id="principal" /> <br />
+                </div>
 
-        <button onclick="compute()">Compute</button>
+                <div class="form-group">
+                    <label for="Rate ">Interest Rate </label>
+                    <input
+                        type="range"
+                        id="rangeInput"
+                        name="rangeInput"
+                        min="0"
+                        max="20"
+                        value="0"
+                        oninput="rate.value=rangeInput.value"
+                    />
+                    <output id="rate" name="rate" for="rangeInput">0</output>
+                </div>
+                <div class="form-group">
+                    <label for="No. of Years">No. of Years</label>
+                    <input type="number" id="years" list="yearlist" /> <br />
+                </div>
+
+                <button onclick="simpleInterest()">Compute Interest</button>
+
+                <p id="Displayresult"></p>
+            </div>
+
+            <datalist id="yearlist">
+                <option value="1"></option>
+
+                <option value="2"></option>
+
+                <option value="3"></option>
+
+                <option value="4"></option>
+
+                <option value="5"></option>
+
+                <option value="6"></option>
+
+                <option value="7"></option>
+
+                <option value="8"></option>
+
+                <option value="9"></option>
+
+                <option value="10"></option>
+            </datalist>
+        </section>
+
+        <script src="script.js"></script>
     </body>
 </html>
